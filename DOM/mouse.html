@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="changeColor">Here we are going to change the color</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolorem.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laboriosam doloremque eaque accusamus, quisquam optio dolorum sequi ut blanditiis beatae?</p>
+
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente saepe temporibus iste, ut aut voluptatem!</p>
+        
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:red; width:100px; height:30px; padding:30px">
+            Hey! Click me
+        </div>
+        
+        <ul id="change">
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum dolor.</li>
+        </ul>
+    </div>
+-
+    <div>
+        <h3 id="getValue"></h3>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        function mOver(obj) {
+            obj.style.backgroundColor = "yellow";
+            obj.innerHTML = "Over the button!";
+        }
+        function mOut(obj) {
+            obj.style.backgroundColor = "blue";
+            obj.innerHTML = "get out!";
+        }
+    </script>
+    
+</body>
+</html>
